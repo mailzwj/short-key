@@ -4,7 +4,6 @@
  * 替换成分配得到的值。即可查看 mongoDB
  * 测试程序。否则则开启hello world程序。
  ***/
-
 var mongo = require("mongoskin");
-var db_url = exports.db_url = "yrVkrVLEwSJk:kRGCdu7BYK@127.0.0.1:20088/ZjKP4KSCeTkZ";
+var db_url = exports.db_url = "dbUsername:dbPassword@host:port/dbName";
 exports.db = mongo.db(db_url);
