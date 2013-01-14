@@ -1,4 +1,9 @@
 {
-  "name": "seejs",
-  "main": "./server.js"
+	"name" : "seejs",
+	"main" : "./server.js",
+	"dependencies" : 
+	{
+		"express" : "3.0.6",
+		"jade" : "*"
+	}
 }
