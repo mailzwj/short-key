@@ -1,0 +1,22 @@
+extends layout
+block content
+    h1= title
+    p#title Title: #{title}（在http://www.gravatar.com设置的头像）
+    p.content(style="color: #f50;") Content: #{content}
+    div#J_Overlay.tpl
+        form(id="searchfrom", action="/users", target="_blank")
+            label 输入邮箱地址：
+            input(type="text", name="email", placeholder="输入邮箱地址")
+            br
+            label 头像尺寸：
+            input(type="text", name="s", placeholder="例：120")
+            br
+            input(type="submit", value="预览")&nbsp;&nbsp;
+            input(id="resetSearch", type="reset",value="清除")
+    hr
+    a(href="/users", target="_blank") 点击查看在gravatar上设置的头像
+    br
+    span.help-inline 接口格式：/users?email=youremail&s=size(例：http://seejs.cnodejs.net/users?email=seejs@seejs.com&s=120)
+    script(src="javascripts/jquery-1.8.3.min.js")
+    script(src="javascripts/kissy-1.2.0.min.js")
+    script(src="javascripts/shortkey.js")

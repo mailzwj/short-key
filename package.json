@@ -1,0 +1,4 @@
+{
+  "name": "seejs",
+  "main": "./server.js"
+}
